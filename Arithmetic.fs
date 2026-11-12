@@ -1,21 +1,23 @@
+function add(a, b) {
+    return a + b;
+}
 
-module Arithmetic
+function subtract(a, b) {
+    return a - b;
+}
 
-// Қосу
-let add a b =
-    a + b
+function multiply(a, b) {
+    return a * b;
+}
 
-// Азайту
-let subtract a b =
-    a - b
+function divide(a, b) {
+    if (b === 0) {
+        throw new Error("Нөлге бөлуге болмайды!");
+    }
+    return a / b;
+}
 
-// Көбейту
-let multiply a b =
-    a * b
-
-// Бөлу
-let divide a b =
-    if b = 0 then
-        failwith "Қате: нөлге бөлуге болмайды!"
-    else
-        a / b
+console.log(add(10, 5));
+console.log(subtract(10, 5));
+console.log(multiply(10, 5));
+console.log(divide(10, 5));
